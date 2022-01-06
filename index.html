@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Авторизация пользователя</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<form id="form_id" class="form-login" action="#" method="GET" novalidate>
+		<h1 class="form-login__title">Регистрация</h1>
+		<label class="input-email_label" for="email_input">Email<span class="errors error-email"></span></label>
+		<input class="form-login__input-email" type="email" placeholder="Введите e-mail" name="email" id="email_input" autofocus>
+		<label class="input-password_label" for="password-input">Пароль<span class="errors error-pass"></span></label>
+		<input type="password" placeholder="Введите пароль" name="password" id="password-input" class="form-login__input-password" >
+		<input type="checkbox" name="accept" id="checkbox-offer" class="checkbox-click">
+		<div id="field-mark" class="form-login__checkbox-mark"><span class="errors error-mark"></span></div>
+		<label for="checkbox-offer" class="checkbox-click_label">Я согласен с <a class="rules">Правилами пользования приложением</a></label>
+		<button type="submit" class="form-login__button">Регистрация</button>
+		<script src="js/script.js"></script>
+	</form>
+</body>
+</html>

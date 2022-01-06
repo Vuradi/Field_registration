@@ -1,0 +1,427 @@
+* {
+	margin: 0;
+}
+
+body {
+	position: relative;
+	background: #1B2473;
+	width: 100%;
+}
+
+.form-login {
+	position: absolute;
+	width: 600px;
+	height: 412px;
+	left: 50%;
+	transform: translate(-50%);
+	top: 82px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+}
+
+.form-login__title {
+	position: absolute;
+	width: 320px;
+	height: 50px;
+	left: 149px;
+	top: 30px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 50px;
+	line-height: 50px;
+	color: #787878;
+}
+
+.input-email_label {
+	position: absolute;
+	left: 53px;
+	top: 93px;
+	font-family: Roboto;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 16px;
+	color: #787878;
+}
+
+.error-email {
+	position: absolute;
+	width: 170px;
+	height: 16px;
+	left: -5px;
+	top: 67px;
+	font-family: Roboto;
+	font-weight: 500;
+	font-size: 10px;
+	line-height: 16px;
+	color: #CB2424;
+}
+
+.input-email_label::before {
+	position: absolute;
+	content: "*";
+	top: 30px;
+	right: 50px;
+	font-size: 18px;
+	line-height: 18px;
+	font-family: Roboto;
+	font-weight: bold;
+}
+
+.form-login__input-email {
+	position: absolute;
+	width: 509px;
+	height: 49px;
+	left: 50%;
+	top: 112px;
+	transform: translate(-50%);
+	background: #FFFFFF;
+	border: 2px solid #787878;
+	box-sizing: border-box;
+	border-radius: 10px;
+
+	padding: 7px 15px 6px 15px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 36px;
+	color: #787878;
+}
+
+.form-login__input-email::placeholder {
+	position: absolute;
+	left: 15px;
+	top: 7px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 36px;
+	color: #CCCCCC;
+}
+
+.input-password_label {
+	position: absolute;
+	left: 53px;
+	top: 174px;
+	font-family: Roboto;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 16px;
+	color: #787878;
+}
+
+.input-password_label::before {
+	position: absolute;
+	content: "*";
+	top: 30px;	
+	right: 66px;
+	font-size: 18px;
+	line-height: 18px;
+	font-family: Roboto;
+	font-weight: bold;
+}
+
+.form-login__input-password {
+	position: absolute;
+	width: 509px;
+	height: 49px;
+	left: 50%;
+	top: 193px;
+	transform: translate(-50%);
+	background: #FFFFFF;
+	border: 2px solid #787878;
+	box-sizing: border-box;
+	border-radius: 10px;
+
+	padding: 7px 15px 6px 15px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 36px;
+	color: #787878;
+}
+
+.form-login__input-password::placeholder {
+	position: absolute;
+	left: 15px;
+	top: 7px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 36px;
+	color: #CCCCCC;
+}
+
+.error-pass {
+	position: absolute;
+	width: 253px;
+	height: 16px;
+	left: -5px;
+	top: 67px;
+	font-family: Roboto;
+	font-weight: 500;
+	font-size: 10px;
+	line-height: 16px;
+	color: #CB2424;
+}
+
+.checkbox-click {
+	position: absolute;
+	opacity: 0;
+	width: 24px;
+	height: 24px;
+	left: 45px;
+	top: 258px;
+}
+
+.form-login__checkbox-mark {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	left: 45px;
+	top: 258px;
+	border: 2px solid #787878;
+	box-sizing: border-box;
+	border-radius: 7px;
+	color: #787878;
+}
+
+.checkbox-click:checked + .form-login__checkbox-mark::after {
+	content: '✓';
+	position: absolute;
+	width: 17px;
+	height: 17px;
+	left: 4px;
+	line-height: 23px;
+	font-size: 18px;
+	color: #787878;
+}
+
+.checkbox-click_label {
+	position: absolute;
+	left: 45px;
+	padding-left: 34px;
+	top: 262px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	color: #787878;
+}
+
+.checkbox-click_label:hover {
+	color: #3fd78c;
+}
+
+.form-login__checkbox-mark::before {
+	position: absolute;
+	content: "*";
+	right: 25px;
+	font-size: 18px;
+	line-height: 18px;
+	font-family: Roboto;
+	font-weight: bold;
+}
+
+.error-mark {
+	position: absolute;
+	width: 253px;
+	height: 16px;
+	left: 1px;
+	top: 21px;
+	font-family: Roboto;
+	font-weight: 500;
+	font-size: 10px;
+	line-height: 16px;
+	color: #CB2424;
+}
+
+.rules {
+	text-decoration: underline;
+}
+
+.form-login__button {
+	position: absolute;
+	width: 180px;
+	height: 52px;
+	left: 50%;
+	top: 334px;
+	transform: translate(-50%);
+	background: #1A226B;
+	border-radius: 10px;
+	border: none;
+
+	color: #FFFFFF;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 16px;
+}
+
+.form-login__button:hover {
+	background: #3fd78c;
+}
+
+.form-login__button:focus {
+	background: #3fd78c;
+	overline: 0;
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+	.form-login {
+		position: absolute;
+		width: 90%;
+		height: 697px;
+		left: 50%;
+		top: 20px;
+		transform: translate(-50%);
+		background: #FFFFFF;
+		box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+		border-radius: 20px;
+		}
+	.form-login__title {
+		top: 38px;
+		left: 50%;
+		transform: translate(-50%);
+		font-size: 60px;
+		line-height: 50px;
+		}
+	.input-email_label {
+		width: 60px;
+		height: 16px;
+		left: 42px;
+		top: 101px;
+		font-size: 24px;
+		line-height: 16px;
+	}
+	.input-email_label::before {
+		position: absolute;
+		content: "*";
+		top: 30px;
+		right: 72px;
+		font-size: 18px;
+		line-height: 18px;
+		font-family: Roboto;
+		font-weight: bold;
+	}
+	.form-login__input-email {
+		width: 90%;
+		height: 49px;
+		left: 50%;
+		top: 125px;
+		transform: translate(-50%);
+	}
+	.error-email {
+		position: absolute;
+		width: 170px;
+		height: 16px;
+		left: -5px;
+		top: 72px;
+		font-family: Roboto;
+		font-weight: 500;
+		font-size: 10px;
+		line-height: 16px;
+		color: #CB2424;
+	}
+	.input-password_label {
+		width: 84px;
+		height: 16px;
+		left: 42px;
+		top: 201px;
+		font-size: 24px;
+		line-height: 16px;
+	}
+	.input-password_label::before {
+		position: absolute;
+		content: "*";
+		top: 30px;
+		right: 95px;
+		font-size: 18px;
+		line-height: 18px;
+		font-family: Roboto;
+		font-weight: bold;
+	}
+	.form-login__input-password {
+		width: 90%;
+		height: 49px;
+		left: 50%;
+		top: 225px;
+		transform: translate(-50%);
+	}
+	.error-pass {
+		position: absolute;
+		width: 253px;
+		height: 16px;
+		left: -5px;
+		top: 73px;
+		font-family: Roboto;
+		font-weight: 500;
+		font-size: 10px;
+		line-height: 16px;
+		color: #CB2424;
+	}
+	.checkbox-click {
+		position: absolute;
+		opacity: 0;
+		width: 30px;
+		height: 30px;
+		left: 35px;
+		top: 299px;
+	}
+	.checkbox-click_label {
+		width: 65%;
+		height: 34px;
+		left: 38px;
+		top: 298px;
+		font-size: 18px;
+		line-height: 16px;
+	}
+	.form-login__checkbox-mark {
+		width: 32px;
+		height: 32px;
+		left: 32px;
+		top: 298px;
+		background: #FFFFFF;
+		border: 2px solid #787878;
+		box-sizing: border-box;
+		border-radius: 7px;
+	}
+	.form-login__checkbox-mark::before {
+		position: absolute;
+		content: "*";
+		right: 32px;
+		font-size: 18px;
+		line-height: 18px;
+		font-family: Roboto;
+		font-weight: bold;
+	}
+	.checkbox-click:checked + .form-login__checkbox-mark::after {
+		content: '✓';
+		position: absolute;
+		width: 27px;
+		height: 25px;
+		left: 4px;
+		line-height: 29px;
+		font-size: 28px;
+		color: #787878;
+	}
+	.error-mark {
+		position: absolute;
+		width: 253px;
+		height: 16px;
+		left: 1px;
+		top: 31px;
+		font-family: Roboto;
+		font-weight: 500;
+		font-size: 10px;
+		line-height: 16px;
+		color: #CB2424;
+	}
+}
